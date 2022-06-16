@@ -1,0 +1,92 @@
+* {
+    margin: 15px;
+    padding: 0;
+    color: white;
+    max-width: 1440px;
+}
+
+html {
+    background-image: url(/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navigation {
+    display: flex;
+    margin-left: 40px;
+}
+#logo {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+}
+#huddle {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+}
+.container-left {
+    min-width: 50%;
+}
+.container-right {
+    max-width: 40%;
+    margin-top: 5%;
+}
+button {
+    color: hsl(257, 40%, 49%);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+footer {
+    position: relative;
+    float: right;
+    bottom: 15px;
+    cursor: pointer;
+}
+footer > i {
+    font-size: 20px;
+    border: 1px white solid;
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: -5px;
+}
+button:hover {
+    border: 2px hsl(300, 69%, 71%) solid;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+footer > i:hover {
+    border: 2px hsl(300, 69%, 71%) solid;
+    color:hsl(300, 69%, 71%);
+}
+#mock-up {
+    transition: transform .1s;
+    width: 100%;
+}
+#mock-up:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 375px) {
+    html {
+        background-image : rotate(90deg);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-right {
+        text-align: center;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
